@@ -1,27 +1,40 @@
-# React + TypeScript + Vite
+# StarNavi Test Task
+ [DEMO](https://igor-kashchenko.github.io/starnavi-test-task/)
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The test app is designed to fulfill the following criteria:
 
-Currently, two official plugins are available:
+1. **Error-Free Operation:** The app must work without errors.
+2. **Fetch Presets:** It should fetch presets for app modes from an external API endpoint. These presets are an array of objects containing a `field` attribute, which specifies the size of the app field in square form.
+3. **User Interaction:**
+   - Users can set the app mode.
+   - Users can press the "START" button to begin interaction.
+   - When the user hovers over a square, it turns blue.
+   - When the user hovers over a blue square, it turns white.
+   - Hover squares are displayed to indicate the current state.
+   - 
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone this repository to your local machine.
 
-## Expanding the ESLint configuration
+   ```bash
+   git clone <repository_url>
+2. Navigate to the project directory.
+    ```bash
+   cd test-app
+3. Install the required dependencies.
+    ```bash
+   npm install
+    
+## Running the App.
+To run the test app, follow these steps:
+1. Start the development server.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   ```bash
+   npm start
+2. Open a web browser and navigate to `http://localhost:3000` to access the app.
+3. Use the app to set the mode, press "START," and interact with the squares as described in the features section.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Additional Information
+- The app is built using React, Material-UI, and TypeScript.
+- The presets for app modes are fetched from the following API endpoint: https://60816d9073292b0017cdd833.mockapi.io/modes.
