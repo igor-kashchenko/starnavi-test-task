@@ -12,7 +12,6 @@ The test app is designed to fulfill the following criteria:
    - When the user hovers over a square, it turns blue.
    - When the user hovers over a blue square, it turns white.
    - Hover squares are displayed to indicate the current state.
-   - 
 ## Installation
 
 1. Clone this repository to your local machine.
